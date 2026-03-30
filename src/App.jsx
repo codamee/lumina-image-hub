@@ -1,11 +1,13 @@
 import {  getPhotos, getVideos } from "./api/mediaApi"
+import SearchBar from "./components/SearchBar"
+import Tabs from "./components/Tabs"
 
 const App = () => {
   return (
     <>
-      <div className="flex gap-4 p-4">
-        <button onClick={async() => console.log(await getPhotos('cat')) }>getPhotos</button>
-        <button onClick={async() => console.log( await getVideos('cat')) }>videos</button>
+      <div className="h-dvh bg-gray-950 text-white">
+        <SearchBar />
+        <Tabs/>
       </div>
     </>
   )
