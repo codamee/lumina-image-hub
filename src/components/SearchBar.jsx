@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { setQuery } from "../redux/features/searchSlice"
+import { Link } from "react-router-dom"
 
 const SearchBar = () => {
     const [text, setText] = useState('')
@@ -26,7 +27,7 @@ const SearchBar = () => {
                     }} />
                     <button className="bg-white text-black px-4 py-2 outline-none rounded text-xl active:scale-95 cursor-pointer">Search</button>
                 </form>
-                <button className="bg-blue-600  px-4 py-2 outline-none rounded text-xl active:scale-95 cursor-pointer font-semibold">Collection</button>
+                <Link to={'/collection'}><button className="bg-blue-600  px-4 py-2 outline-none rounded text-xl active:scale-95 cursor-pointer font-semibold">Collection</button></Link>
             </div>
             
         </div>
