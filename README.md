@@ -1,16 +1,41 @@
-# React + Vite
+# 📸 Lumina Image Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A media discovery platform built to master **Redux Toolkit** and **Tailwind CSS v4**. This project focuses on efficient state management, persistent collections using the localstorage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+* **Search feature:** Switch between photo and video .
+* **Redux Collection System:** Save or remove items from collection.
+* **Persistent Storage:** Uses `localStorage` to save the collection.
+* **Framed Animations:** Smooth fade-in effects using `framer-motion` as users scroll through results.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+* **Core:** React (Vite)
+* **State:** Redux Toolkit
+* **Navigation:** React Router DOM
+* **Styling:** Tailwind CSS v4
+* **Animations:** Framer Motion
+* **API:** Axios (Pexels API)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Setup & Installation
+
+1.  **Clone the repo**
+    ```bash
+    git clone https://github.com/codamee/lumina-image-hub.git
+    ```
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
+3.  **Environment Variables**
+    Create a `.env` file in the root and add your Pexels API Key:
+    ```env
+    VITE_PEXELS_API_KEY=your_api_key_here
+    ```
+4.  **Run Development Server**
+    ```bash
+    npm run dev
+    ```
