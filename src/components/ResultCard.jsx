@@ -9,34 +9,12 @@ const ResultCard = ({ item }) => {
     const dispatch = useDispatch()
     const addToCollection = (item) => {
         dispatch(addCollection(item))
-        toast('🦄 Saved to collection', {
-            position: "top-right",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-        });
+        toast.success('Saved to collection');
     }
 
     return (
         <>
-
             <div className='relative h-85 w-85 rounded'>
-                <ToastContainer
-                    position="top-right"
-                    autoClose={5000}
-                    hideProgressBar={false}
-                    newestOnTop={false}
-                    closeOnClick={false}
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                    theme="light"
-                />
                 <motion.div
                     initial={{ opacity: 0, y: 30, scale: 0.95 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
