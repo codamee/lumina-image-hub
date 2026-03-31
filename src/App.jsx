@@ -7,7 +7,7 @@ import CollectionPage from "./pages/CollectionPage"
 const App = () => {
   return (
     <>
-      <div className=" bg-gray-950 text-white overflow-hidden">
+      <div className=" bg-[#0D1321] text-white overflow-hidden">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/collection" element={<CollectionPage/>} />
