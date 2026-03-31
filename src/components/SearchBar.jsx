@@ -20,7 +20,7 @@ const SearchBar = () => {
                 <input value={text} className="w-full border-2 px-4 py-2 outline-none rounded text-xl" type="text" placeholder="Search photos & videos..." required onChange={(e) => {
                     setText(e.target.value)
                 }} />
-                <button className=" border-2 px-4 py-2 outline-none rounded text-xl active:scale-95 cursor-pointer">Search</button>
+                <button className="border-2 px-4 py-2 outline-none rounded text-xl active:scale-95 cursor-pointer">Search</button>
             </form>
         </div>
     )
