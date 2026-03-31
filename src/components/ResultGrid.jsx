@@ -53,10 +53,10 @@ const ResultGrid = () => {
         };
         getData();
     }, [query, activeTab]);
-    if (error) return <div>Error</div>;
-    if (loading) return <div>Loading</div>;
+    if (error) return <div className="min-h-[80vh] p-10">Error</div>;
+    if (loading) return <div className="min-h-[80vh] p-10">Loading</div>;
     return (
-        <div className="grid grid-cols-4 gap-7 px-10 pb-10 justify-between">
+        <div className="min-h-[80vh] grid grid-cols-4 gap-7 px-10 pb-10 justify-between">
             {results.map((item, index) => {
                 return <ResultCard key={index} item={item} />
             })}

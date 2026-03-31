@@ -22,7 +22,7 @@ const SearchBar = () => {
             </div>
             <div className="flex gap-5 w-1/2">
                 <form onSubmit={(e) => handleSubmit(e)}  className="flex gap-5 w-full">
-                    <input value={text} autoFocus={true} className=" w-full border px-4 py-2 outline-none rounded text-xl" type="text" placeholder="Search photos & videos..." required onChange={(e) => {
+                    <input value={text} autoFocus={true} className=" w-full border border-gray-600 px-4 py-2 outline-none rounded text-xl" type="text" placeholder="Search photos & videos..." required onChange={(e) => {
                         setText(e.target.value)
                     }} />
                     <button className="bg-white text-black px-4 py-2 outline-none rounded text-xl active:scale-95 cursor-pointer">Search</button>
